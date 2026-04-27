@@ -33,7 +33,11 @@ If an action would move the agent into an obstacle, the agent remains in its cur
 The agent cannot move outside the grid:
 
 Moving up from top row states `{0,1,2,3,4}` results in no movement.
+
 Moving down from bottom row states `{20,21,22,23}` results in no movement.
+
 Moving right from `{4,9,14,19,24}` results in no movement.
+
 Moving left from `{0,5,10,15,20}` results in no movement.
+
 In all invalid transitions (boundary or obstacle), the state remains unchanged.
