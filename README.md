@@ -9,7 +9,7 @@ In this project, I implemented and compared several Monte Carlo and Temporal-Dif
 Each method was evaluated in terms of accuracy, stability, and convergence behavior.
 
 ## Environment Description
-* Size: 5×5 Gridworld
+* _Size_: 5×5 Gridworld
 * Terminal State: cell 24
 * Obstacles: cells 6, 8, 15, and 17
 * Transition Dynamics: stochastic — each agent’s action may result in a random neighboring move with certain probability
