@@ -1,1 +1,1 @@
-# Stochastic-Gridworld-RL-Prediction-Control-with-MC-TD-SARSA-and-Q-Learning
+# Comparative Study of Monte Carlo and Temporal-Difference Algorithms for Policy Evaluation and Control in Gridworld
