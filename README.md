@@ -25,4 +25,15 @@ The agent starts from state 0 and aims to reach the terminal state 24.
 ### Obstacles
 The following states are blocked and cannot be entered:
 `{6,8,15,17}`
+
 If an action would move the agent into an obstacle, the agent remains in its current state.
+
+###  Boundary Conditions
+
+The agent cannot move outside the grid:
+
+Moving up from top row states `{0,1,2,3,4}` results in no movement.
+Moving down from bottom row states `{20,21,22,23}` results in no movement.
+Moving right from `{4,9,14,19,24}` results in no movement.
+Moving left from `{0,5,10,15,20}` results in no movement.
+In all invalid transitions (boundary or obstacle), the state remains unchanged.
