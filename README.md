@@ -9,8 +9,20 @@ In this project, I implemented and compared several Monte Carlo and Temporal-Dif
 Each method was evaluated in terms of accuracy, stability, and convergence behavior.
 
 ## Environment Description
-* **Size**: 5×5 Gridworld
-* **Terminal State**: cell 24
-* **Obstacles**: cells 6, 8, 15, and 17
-* **Transition Dynamics**: stochastic — each agent’s action may result in a random neighboring move with certain probability
-* **Reward Function**: includes penalties for invalid or obstacle states, positive reward for reaching the terminal state
+The environment is a custom 5×5 Gridworld with 25 discrete states indexed from 0 to 24 (row-major order).
+The agent starts from state 0 and aims to reach the terminal state 24.
+
+###  State and Action Space
+**Number of states**: 25
+**Start state**: 0
+**Terminal state**: 24
+**Number of actions**: 4
+  * 0 → Up
+  * 1 → Right
+  * 2 → Down
+  * 3 → Left
+
+### Obstacles
+The following states are blocked and cannot be entered:
+`{6,8,15,17}`
+If an action would move the agent into an obstacle, the agent remains in its current state.
