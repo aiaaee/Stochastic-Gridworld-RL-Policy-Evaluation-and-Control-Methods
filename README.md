@@ -1,3 +1,3 @@
-# Prediction and Control in a Stochastic 5×5 Gridworld Using Monte Carlo and Temporal-Difference Methods
+# Reinforcement Learning in a Stochastic 5×5 Gridworld: A Study of Prediction and Control Methods
 
 
