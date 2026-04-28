@@ -28,7 +28,7 @@ The following states are blocked and cannot be entered:
 
 If an action would move the agent into an obstacle, the agent remains in its current state.
 
-###  Boundary Conditions
+###  Boundary Conditions: 
 
 The agent cannot move outside the grid:
 
@@ -42,7 +42,7 @@ The agent cannot move outside the grid:
 
 In all invalid transitions (boundary or obstacle), the state remains unchanged.
 
-### Reward Structure 
+### Reward Structure: 
 
 * Reaching the terminal state (24):
 
