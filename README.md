@@ -56,4 +56,24 @@ Episode terminates (done = True)
 
 Episode continues (done = False)
 
+
+
+
+
+
+
+## How to Run
+```
+# Clone the repository
+git clone https://github.com/YourUsername/Gridworld-RL.git
+cd Gridworld-RL
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run experiments
+python main.py
+```
+Modify configuration parameters in config.py to test different learning rates, ε-values, or episode lengths.
+
 This negative step reward encourages the agent to find the shortest path to the goal.
