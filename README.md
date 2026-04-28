@@ -76,6 +76,15 @@ Episode continues (done = False)
 ** Each algorithm was applied to learn value functions and optimal policies under ε‑greedy exploration.
 
 
+## Policies Used for Prediction
+In the prediction experiments, value estimation was performed under three different fixed policies, allowing a comparison of how Monte Carlo, TD(0), n‑step TD, and TD(λ) behave under varying policy structures:
+
+### Optimal-like Policy (Target Policy)
+
+A hand‑crafted policy designed to move the agent efficiently toward the terminal state.
+
+This policy serves as a near-optimal baseline for evaluating value estimation accuracy.
+
 ## How to Run
 ```
 # Clone the repository
