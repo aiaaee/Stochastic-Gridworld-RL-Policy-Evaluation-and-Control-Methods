@@ -59,7 +59,21 @@ Episode continues (done = False)
 
 
 
+## Implemented Algorithms
+### Prediction Methods:
 
+* Monte Carlo (first-visit and every-visit)
+* TD(0)
+* n-step Temporal Difference
+* TD(λ)
+
+### Control Methods:
+
+* Monte Carlo Control (ε‑greedy)
+* SARSA
+* Q‑Learning
+
+** Each algorithm was applied to learn value functions and optimal policies under ε‑greedy exploration.
 
 
 ## How to Run
