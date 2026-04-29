@@ -82,9 +82,7 @@ The implemented prediction methods (Monte Carlo, TD(0), n-step TD, and TD(λ)) w
 
 ### Random Policy
 
-The random policy produced strongly negative values, which is expected.  
-Since each action incurs a −0.4 penalty and the random agent typically takes long trajectories before reaching the terminal state, returns become highly negative.  
-This behavior confirms that the reward structure and environment dynamics are implemented correctly.
+The random policy produced strongly negative values, which is expected. because the random agent usually wanders for many steps before reaching the terminal state, accumulating multiple −0.4 penalties and resulting in a highly negative total return. This behavior confirms that the reward structure and environment dynamics are implemented correctly.
 
 ### Optimal-like Policy
 
