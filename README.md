@@ -76,26 +76,38 @@ Episode continues (done = False)
 ** Each algorithm was applied to learn value functions and optimal policies under ε‑greedy exploration.
 
 
-## Policies Used for Prediction
-In the prediction experiments, value estimation was performed under three different fixed policies, allowing a comparison of how Monte Carlo, TD(0), n‑step TD, and TD(λ) behave under varying policy structures:
+## Results & Analysis
 
-### Optimal-like Policy (Target Policy)
-
-A hand‑crafted policy designed to move the agent efficiently toward the terminal state.
-
-This policy serves as a near-optimal baseline for evaluating value estimation accuracy.
-
-### Additional (Custom) Policy
-
-A secondary deterministic policy with different action tendencies, used to analyze how prediction methods respond to non‑optimal or biased policies.
+The implemented prediction methods (Monte Carlo, TD(0), n-step TD, and TD(λ)) were evaluated under three policies: random, custom, and optimal-like.
 
 ### Random Policy
 
-A fully stochastic policy where each action has equal probability.
+The random policy produced strongly negative values, which is expected.  
+Since each action incurs a −0.4 penalty and the random agent typically takes long trajectories before reaching the terminal state, returns become highly negative.  
+This behavior confirms that the reward structure and environment dynamics are implemented correctly.
 
-This policy provides insight into how algorithms perform in highly exploratory or unstructured environments.
+### Optimal-like Policy
 
-## Results and Analysis
+The optimal-like policy yielded value estimates that closely match the theoretical shortest‑path returns (e.g., −1.8, −1.4, −1.0, …, +1).  
+This indicates that:
+
+- State transitions are correct,
+- The terminal state is handled properly,
+- The step penalty and terminal reward are propagated as expected.
+
+Across this policy, all algorithms (MC, TD(0), TD(λ)) converged to very similar value functions, which is consistent with theory in small tabular environments.
+
+### Custom Policy
+
+Under the custom policy, meaningful values were obtained only for states that were actually visited.  
+Several states retained a value of 0 because they were never encountered under this policy.  
+This is the correct behavior for both Monte Carlo and TD methods, as they only update states that appear in sampled trajectories.
+
+### Overall Behavior
+
+In general, TD-based methods converged faster due to bootstrapping, while Monte Carlo required more episodes to stabilize.  
+However, all prediction algorithms produced consistent and stable value estimates.  
+Overall, the results align well with theoretical expectations for reinforcement learning in a small stochastic Gridworld environment.
 
 ## How to Run
 ```
