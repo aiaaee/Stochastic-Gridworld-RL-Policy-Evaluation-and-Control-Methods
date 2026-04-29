@@ -120,3 +120,18 @@ python main.py
 Modify configuration parameters in config.py to test different learning rates, ε-values, or episode lengths.
 
 This negative step reward encourages the agent to find the shortest path to the goal.
+
+
+## Conclusion
+This study demonstrates the relative strengths of Monte Carlo and TD-based reinforcement learning methods in a stochastic environment.
+
+Temporal-Difference approaches tend to adapt faster under random transitions, while Monte Carlo retains higher accuracy for long-term evaluation.
+
+
+
+## Future Work
+Future improvements may include:
+
+* Expanding to larger Gridworlds (e.g., 10×10)
+* Implementing value-function approximation (neural networks)
+* Comparing off-policy methods like Expected SARSA and Double Q-Learning
