@@ -85,6 +85,16 @@ A hand‑crafted policy designed to move the agent efficiently toward the termin
 
 This policy serves as a near-optimal baseline for evaluating value estimation accuracy.
 
+### Additional (Custom) Policy
+
+A secondary deterministic policy with different action tendencies, used to analyze how prediction methods respond to non‑optimal or biased policies.
+
+### Random Policy
+
+A fully stochastic policy where each action has equal probability.
+
+This policy provides insight into how algorithms perform in highly exploratory or unstructured environments.
+
 ## How to Run
 ```
 # Clone the repository
