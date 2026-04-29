@@ -89,23 +89,21 @@ The random policy produced strongly negative values, which is expected. because 
 The optimal-like policy yielded value estimates that closely match the theoretical shortest‑path returns (e.g., −1.8, −1.4, −1.0, …, +1).  
 This indicates that:
 
-- State transitions are correct,
-- The terminal state is handled properly,
-- The step penalty and terminal reward are propagated as expected.
+* State transitions are correct,
+* The terminal state is handled properly,
+* The step penalty and terminal reward are propagated as expected.
 
 Across this policy, all algorithms (MC, TD(0), TD(λ)) converged to very similar value functions, which is consistent with theory in small tabular environments.
 
 ### Custom Policy
 
-Under the custom policy, meaningful values were obtained only for states that were actually visited.  
-Several states retained a value of 0 because they were never encountered under this policy.  
-This is the correct behavior for both Monte Carlo and TD methods, as they only update states that appear in sampled trajectories.
+* Under the custom policy, meaningful values were obtained only for states that were actually visited.  
+* Several states retained a value of 0 because they were never encountered under this policy.  
+* This is the correct behavior for both Monte Carlo and TD methods, as they only update states that appear in sampled trajectories.
 
 ### Overall Behavior
 
-In general, TD-based methods converged faster due to bootstrapping, while Monte Carlo required more episodes to stabilize.  
-However, all prediction algorithms produced consistent and stable value estimates.  
-Overall, the results align well with theoretical expectations for reinforcement learning in a small stochastic Gridworld environment.
+In general, TD-based methods converged faster due to bootstrapping, while Monte Carlo required more episodes to stabilize. However, all prediction algorithms produced consistent and stable value estimates. Overall, the results align well with theoretical expectations for reinforcement learning in a small stochastic Gridworld environment.
 
 ## How to Run
 ```
