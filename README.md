@@ -95,6 +95,8 @@ A fully stochastic policy where each action has equal probability.
 
 This policy provides insight into how algorithms perform in highly exploratory or unstructured environments.
 
+## Results and Analysis
+
 ## How to Run
 ```
 # Clone the repository
