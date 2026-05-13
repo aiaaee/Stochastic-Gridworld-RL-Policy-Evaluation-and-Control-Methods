@@ -1,6 +1,6 @@
 # Reinforcement Learning in a Stochastic 5×5 Gridworld: A Study of Prediction and Control Methods
 
-## Abstract
+## Abstract 
 This project explores reinforcement learning techniques for both prediction (policy evaluation) and control (policy improvement) in a stochastic 5×5 Gridworld environment. The goal is to understand how different algorithms perform in estimating value functions and deriving optimal policies under stochastic transitions and obstacles.
 
 ## Project Overview
